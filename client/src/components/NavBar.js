@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function NavBar( {user,setUser} ) {
 
     function handleLogout(){
-        fetch('http://localhost:3000/logout', {
+        fetch('/logout', {
             method: "DELETE", 
         })
         .then(response => {

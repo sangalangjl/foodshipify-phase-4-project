@@ -6,7 +6,7 @@ function ProductContainer({getProducts, setGetProducts, handleCartData}) {
     const [searchProduct, setSearchProduct] = useState("")
 
     useEffect(() => {
-        fetch("http://localhost:3000/products")
+        fetch("/products")
         .then(r => r.json())
         .then(products => setGetProducts(products))
     }, [])
