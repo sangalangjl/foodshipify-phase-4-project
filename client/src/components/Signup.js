@@ -38,8 +38,8 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="SignUpContainer">
+            <form className="FormSignin"onSubmit={handleSubmit}>
                 <h3>Sign Up</h3>
                 <label htmlFor="first_name">First Name:</label>
                 <input 

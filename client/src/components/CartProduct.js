@@ -2,17 +2,19 @@ const CartProduct = ({eachProduct, handleCartData, handleRemoveCartList}) => {
     const { img_url, name, price, qty } = eachProduct
 
     return (
-        <div>
-            <div>
+        <div className="CartProductContainer">
+            <div className="CartProductImg">
                 <img src={img_url} alt={img_url}/>
+            </div>
+            <div className="CartProductName">
                 <h3>{name}</h3>
             </div>
-            <div>
+            <div className="CartQuantity">
                 <button onClick={() => handleRemoveCartList(eachProduct)}>-</button>
                     {qty}
                 <button onClick={() => handleCartData(eachProduct)}>+</button>
             </div>
-            <div>
+            <div className="CartPrice">
                 <p>${qty * price}</p>
             </div>
         </div>

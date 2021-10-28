@@ -24,29 +24,31 @@ function Login( { errors, setErrors, setUser, setIsLoading} ) {
     } 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h3>Log In</h3>
-            <label>Email:</label>
-            <input 
-                type="text" 
-                id="email" 
-                autoComplete="off"
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)}
-            />
-            <label>Password:</label>
-            <input 
-                type="text" 
-                id="password" 
-                autoComplete="current-password"
-                value={password} 
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <button type="submit">Login</button>
-            {errors.map((err) => (
-            <div key={err}>{err}</div>
-            ))}
-        </form>
+        <div className="LogInContainer">
+            <form onSubmit={handleSubmit}>
+                <h3>Log In</h3>
+                <label>Email:</label>
+                <input 
+                    type="text" 
+                    id="email" 
+                    autoComplete="off"
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <label>Password:</label>
+                <input 
+                    type="text" 
+                    id="password" 
+                    autoComplete="current-password"
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button type="submit">Login</button>
+                {errors.map((err) => (
+                <div key={err}>{err}</div>
+                ))}
+            </form>
+        </div>
     )
 }
 
