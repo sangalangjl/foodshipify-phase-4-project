@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { useHistory} from 'react-router-dom'
 
 function Login( { errors, setErrors, setUser, setIsLoading} ) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    const history = useHistory()
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -17,6 +20,7 @@ function Login( { errors, setErrors, setUser, setIsLoading} ) {
             if (r.ok) {
                 setIsLoading(false)
                 r.json().then((user) => setUser(user))
+                history.push('/')
             } else {
                 r.json().then((err) => setErrors(err.errors))
             }

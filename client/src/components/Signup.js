@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useHistory } from 'react-router'
 
 const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
     const [email, setEmail] = useState('')
@@ -7,6 +8,8 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
     const [address, setAddress] = useState('')
     const [password, setPassword] = useState('')
     const [password_confirmation, setPasswordConfirmation] = useState('')
+
+    const history = useHistory()
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -29,6 +32,7 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
             setIsLoading(false)
             if (r.ok) {
                 r.json().then((user) => setUser(user))
+                history.push('/')
             } else {
                 r.json().then((err) => setErrors(err.errors))
             }
@@ -74,7 +78,7 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
                         onChange={(e) => setEmail(e.target.value)}/>
                 <label htmlFor="password">Password:</label>
                 <input 
-                    type="text" 
+                    type="password" 
                     id="password" 
                     autoComplete="current-password"
                     value={password} 

@@ -79,13 +79,6 @@ function App() {
                 setIsLoading={setIsLoading}
               />
             </Route>
-            {/* <Route path='/cart'>
-              <Cart 
-                cartData={cartData}
-                handleCartData={handleCartData}
-                handleRemoveCartList={handleRemoveCartList}
-              />
-            </Route> */}
             <Route path='/login'>
               <Login 
                 setUser={setUser} 

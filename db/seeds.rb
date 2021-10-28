@@ -108,7 +108,7 @@ p101 = Product.create(name:"Whole Wheat Bread", price:2.55, img_url:"https://oro
 p102 = Product.create(name:"English Muffins", price:5.99, img_url:"https://images.heb.com/is/image/HEBGrocery/000398531", product_type:"Pantry", qty:367)
 p104 = Product.create(name:"Salted Butter", price:4.99, img_url:"https://storcpdkenticomedia.blob.core.windows.net/media/lolretail/media/lolr-media/products/00034500151368-800x800.png?ext=.png", product_type:"Dairy", qty:432)
 p105 = Product.create(name:"Unsalted Butter", price:6.99, img_url:"https://storcpdkenticomedia.blob.core.windows.net/media/lolretail/media/lolr-media/products/00034500151504-600x600.png?ext=.png", product_type:"321", qty:244)
-p105 = Product.create(name:"Cream Cheese", price:3.99, img_url:"https://www.kroger.com/product/images/large/front/0002100000014", product_type:"Dairy", qty:144)
+p106 = Product.create(name:"Cream Cheese", price:3.99, img_url:"https://www.kroger.com/product/images/large/front/0002100000014", product_type:"Dairy", qty:144)
 
 
 

@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import {FaShoppingCart} from "react-icons/fa"
 
 function NavBar( {user,setUser} ) {
+    const history = useHistory()
 
     function handleLogout(){
         fetch('/logout', {
@@ -10,6 +11,7 @@ function NavBar( {user,setUser} ) {
         .then(response => {
             if(response.ok){
                 setUser(null)
+                history.push('/')
             }
         })
     }
@@ -31,9 +33,6 @@ function NavBar( {user,setUser} ) {
                     </>
                 ) : (
                 <>
-                    {/* <Link to='/cart' className="CartLink">
-                        Cart
-                    </Link> */}
                     <Link to='/signup' className="SignUpLink">
                         Sign Up
                     </Link>
