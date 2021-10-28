@@ -96,6 +96,8 @@ a:hover{
   color: #9BB475;
   z-index: 10;
   opacity: 80%;
+  width: 70px;
+  height: 70px;
 }
 
 .left-arrow{
@@ -106,6 +108,8 @@ a:hover{
   color: #9BB475;
   z-index: 10;
   opacity: 80%;
+  width: 70px;
+  height: 70px;
 }
 
 .imgProduct {
@@ -162,7 +166,7 @@ a:hover{
   text-align: center;
 }
 
-.CartProductImg {
+.CartProductImg img {
   width: 100px;
   height: 100px
 }
