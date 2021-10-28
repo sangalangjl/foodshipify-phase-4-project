@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import ImageSlider from "./ImageSlider";
 import ProductList from "./ProductList";
 import Search from"./Search"
 
@@ -19,9 +20,12 @@ function ProductContainer({getProducts, setGetProducts, handleCartData}) {
 
     return(
         <div className="ProductContainer">
-        <div className="searchContainer">
-            <Search searchProduct={searchProduct} setSearchProduct={setSearchProduct}/> 
-        </div>
+            <div>
+                <ImageSlider />
+            </div>
+            <div className="searchContainer">
+                <Search searchProduct={searchProduct} setSearchProduct={setSearchProduct}/> 
+            </div>
         <div className="ProductListContainer"> 
             <ProductList 
                 displayProducts={displayProducts}

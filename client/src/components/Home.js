@@ -1,6 +1,5 @@
 import ProductContainer from "./ProductContainer";
 
-
 const Home = ({user, getProducts, setGetProducts, handleCartData}) => {
     if (user) {
         return (

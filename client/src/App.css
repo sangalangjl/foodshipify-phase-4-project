@@ -22,7 +22,7 @@
 
 .NavBarContainer {
   position: relative;
-  height: 120px;
+  height: 100px;
   background-color:#9BB475;
   display: flex;
   flex-direction: row;
@@ -46,8 +46,13 @@
   font-size: 25px;
 }
 
-.CartLink, .SignUpLink, .LoginLink {
+.SignUpLink, .LoginLink {
   margin: 15px;
+}
+
+.cartIcon {
+  margin: 20px;
+  font-size: 2.2rem;
 }
 
 a{
@@ -78,4 +83,36 @@ a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-arrow {
+  position:absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 4rem;
+  color: #9BB475;
+  z-index: 10;
+  opacity: 80%;
+}
+
+.left-arrow{
+  position:absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 4rem;
+  color: #9BB475;
+  z-index: 10;
+  opacity: 80%;
+}
+
+.imgProduct {
+  width: 1550px;
+  height: 800px;
 }

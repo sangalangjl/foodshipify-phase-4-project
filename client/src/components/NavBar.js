@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import {FaShoppingCart} from "react-icons/fa"
 
 function NavBar( {user,setUser} ) {
 
@@ -23,8 +24,8 @@ function NavBar( {user,setUser} ) {
             <div className="NavBarLinks">
                 {user ? (
                     <>
-                        <Link to='/cart' className="CartLink">
-                            Cart
+                        <Link to='/cart' className="cartIcon">
+                            <FaShoppingCart />
                         </Link>
                         <button onClick={handleLogout}>Log Out</button> 
                     </>
