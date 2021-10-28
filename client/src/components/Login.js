@@ -31,13 +31,12 @@ function Login( { errors, setErrors, setUser, setIsLoading} ) {
                 <input 
                     type="text" 
                     id="email" 
-                    autoComplete="off"
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <label>Password:</label>
                 <input 
-                    type="text" 
+                    type="password" 
                     id="password" 
                     autoComplete="current-password"
                     value={password} 
