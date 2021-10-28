@@ -10,7 +10,7 @@ function ProductContainer({getProducts, setGetProducts, handleCartData}) {
         fetch("/products")
         .then(r => r.json())
         .then(products => setGetProducts(products))
-    }, [])
+    })
 
 
     const displayProducts = getProducts.filter((product) => {

@@ -55,7 +55,7 @@ const Cart = ({cartData, handleCartData, handleRemoveCartList, user}) => {
                             </div>
                     </div>
                     <div className="Checkout">
-                        <p>Checkout</p>
+                        <button>Checkout</button>
                     </div>
                 </div>
             }

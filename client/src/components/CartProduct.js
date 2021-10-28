@@ -1,3 +1,5 @@
+import { FaPlus, FaMinus } from 'react-icons/fa'
+
 const CartProduct = ({eachProduct, handleCartData, handleRemoveCartList}) => {
     const { img_url, name, price, qty } = eachProduct
 
@@ -10,9 +12,9 @@ const CartProduct = ({eachProduct, handleCartData, handleRemoveCartList}) => {
                 <h3>{name}</h3>
             </div>
             <div className="CartQuantity">
-                <button onClick={() => handleRemoveCartList(eachProduct)}>-</button>
+                <button className="CartMinusIcon" onClick={() => handleRemoveCartList(eachProduct)}><FaMinus /></button>
                     {qty}
-                <button onClick={() => handleCartData(eachProduct)}>+</button>
+                <button  className="CartPlusIcon" onClick={() => handleCartData(eachProduct)}><FaPlus /></button>
             </div>
             <div className="CartPrice">
                 <p>${(qty * price).toFixed(2)}</p>

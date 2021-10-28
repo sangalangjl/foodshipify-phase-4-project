@@ -29,7 +29,7 @@ function NavBar( {user,setUser} ) {
                         <Link to='/cart' className="cartIcon">
                             <FaShoppingCart />
                         </Link>
-                        <button onClick={handleLogout}>Log Out</button> 
+                        <button className="LogOutButton" onClick={handleLogout}>Log Out</button> 
                     </>
                 ) : (
                 <>

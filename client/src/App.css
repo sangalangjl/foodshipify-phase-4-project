@@ -13,7 +13,7 @@
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .cardImg {
@@ -143,6 +143,10 @@ a:hover{
   margin: 20px;
 }
 
+.CartProductContainer div {
+  margin: 10px;
+}
+
 .CartTitle {
   margin-left: 20px;
 }
@@ -156,16 +160,19 @@ a:hover{
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #aaa;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px;
 }
+
 
 .CartProductContainer {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #aaa;
-}
-
-.product-image {
-  text-align: center;
 }
 
 .CartProductImg img {
@@ -204,11 +211,35 @@ a:hover{
   margin-top: 15px;
   padding: 6px 25px;
   background-color: #6b6;
-  color: #fff;
-  font-size: 25px;
   border-radius: 3px;
+}
+
+.Checkout button {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: #fff;
 }
 
 .CartProductName {
   margin-right: 20px;
+}
+
+.LogOutButton {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.CartPlusIcon, .CartMinusIcon {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.CartQuantity {
+  border: 1px solid black;
+  border-radius: 10px;
 }
