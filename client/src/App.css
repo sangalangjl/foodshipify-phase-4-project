@@ -117,12 +117,11 @@ a:hover{
 
 .SignUpContainer form,
 .LogInContainer form {
-  margin-top: 120px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 10px;
 }
 
 .SignUpContainer input,
@@ -145,7 +144,12 @@ a:hover{
 }
 
 .CartTitle {
-  font-size: 100;
+  margin-left: 20px;
+}
+
+.CartEmpty {
+  margin-left: 20px;
+
 }
 
 .column-labels {

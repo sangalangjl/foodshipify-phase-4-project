@@ -1,6 +1,6 @@
 import CartProduct from "./CartProduct"
 
-const Cart = ({cartData, handleCartData, handleRemoveCartList}) => {
+const Cart = ({cartData, handleCartData, handleRemoveCartList, user}) => {
     const subTotal = cartData.reduce((a,c) => a + c.price * c.qty, 0)
     const taxRate = 8.00
     const shipping = 15.00
@@ -18,16 +18,16 @@ const Cart = ({cartData, handleCartData, handleRemoveCartList}) => {
     return (
         <div className="shopping-cart">
             <div className="CartTitle">
-                <h2>Shopping Cart</h2>
+                <h1>{user.first_name}'s Shopping Cart</h1>
             </div>
-            <div className="column-labels">
+            {/* <div className="column-labels">
                 <label className="product-image">Image</label>
                 <label className="product-details">Product</label>
                 <label className="product-price">Price</label>
                 <label className="product-quantity">Quantity</label>
                 <label className="product-line-price">Total</label>
-            </div>
-            {cartData.length === 0 ? <h2>Cart is empty</h2> : displayCartDataProduct}
+            </div> */}
+            {cartData.length === 0 ? <h2 className="CartEmpty">Cart is empty</h2> : displayCartDataProduct}
             {cartData.length === 0 ? null : 
                 <div className="totals">
                     <div className="totals-item">

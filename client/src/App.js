@@ -64,6 +64,7 @@ function App() {
                 cartData={cartData}
                 handleCartData={handleCartData}
                 handleRemoveCartList={handleRemoveCartList}
+                user={user}
               />
             </Route>
           </Switch>

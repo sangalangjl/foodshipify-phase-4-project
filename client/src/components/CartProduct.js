@@ -15,7 +15,7 @@ const CartProduct = ({eachProduct, handleCartData, handleRemoveCartList}) => {
                 <button onClick={() => handleCartData(eachProduct)}>+</button>
             </div>
             <div className="CartPrice">
-                <p>${qty * price}</p>
+                <p>${(qty * price).toFixed(2)}</p>
             </div>
         </div>
     )
