@@ -44,7 +44,6 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
     return (
         <div className="SignUpContainer">
             <form className="FormSignin"onSubmit={handleSubmit}>
-                <h3>Sign Up</h3>
                 <label htmlFor="first_name">First Name:</label>
                 <input 
                     type="text" 
@@ -92,9 +91,9 @@ const Signup = ({ setUser, setErrors, isLoading, setIsLoading, errors}) => {
                     value={password_confirmation} 
                     onChange={(e) => setPasswordConfirmation(e.target.value)}
                 />
-                <button type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
+                <button className="SignUpBtn" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
                 {errors.map((err) => (
-                    <div key={err}>{err}</div>
+                    <div className="SignUpError" key={err}>{err}</div>
                 )) }
             </form>
         </div>

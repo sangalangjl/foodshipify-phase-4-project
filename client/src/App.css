@@ -269,3 +269,26 @@ a:hover{
   border: 1px solid black;
   border-radius: 10px;
 }
+
+.LogInForm input, .FormSignin input {
+  margin-bottom: 20px;
+}
+
+.LogInError, .SignUpError {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+.LogInBtn, .SignUpBtn {
+  background: #9BB475;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.FormSignin label, .LogInForm label {
+  float: left;
+  width: 210px;
+}

@@ -29,8 +29,7 @@ function Login( { errors, setErrors, setUser, setIsLoading} ) {
 
     return (
         <div className="LogInContainer">
-            <form onSubmit={handleSubmit}>
-                <h3>Log In</h3>
+            <form className="LogInForm" onSubmit={handleSubmit}>
                 <label>Email:</label>
                 <input 
                     type="text" 
@@ -46,9 +45,9 @@ function Login( { errors, setErrors, setUser, setIsLoading} ) {
                     value={password} 
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Login</button>
+                <button className="LogInBtn" type="submit">Login</button>
                 {errors.map((err) => (
-                <div key={err}>{err}</div>
+                <div className="LogInError" key={err}>{err}</div>
                 ))}
             </form>
         </div>
