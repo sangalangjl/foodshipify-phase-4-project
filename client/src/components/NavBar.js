@@ -18,9 +18,14 @@ function NavBar( {user,setUser} ) {
 
     return(
         <header className="NavBarContainer">
-            <div className="NavBarLogo"> 
+            <div> 
                 <Link to="/">
-                    FoodShipify
+                    <div className="NavBarLogo">
+                        <div>
+                            <img src="https://cdn-icons-png.flaticon.com/512/135/135763.png" alt="FoodShipifyLogo"/>
+                        </div>
+                        <div className="NavBarLogoText">FoodShipify</div>
+                    </div>
                 </Link>
             </div>
             <div className="NavBarLinks">

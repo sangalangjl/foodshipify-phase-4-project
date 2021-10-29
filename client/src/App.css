@@ -32,9 +32,21 @@
 }
 
 .NavBarLogo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.NavBarLogoText {
   font-size: 40px;
-  margin-left: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.NavBarLogo img {
+  width: 45px;
+  height: 45px;
 }
 
 .NavBarLinks {
@@ -62,6 +74,11 @@ a{
 }
 a:hover{
   text-decoration: underline;
+}
+
+.LogOutButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .searchbar {
@@ -149,11 +166,15 @@ a:hover{
 
 .CartTitle {
   margin-left: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
 }
+
 
 .CartEmpty {
   margin-left: 20px;
-
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
 }
 
 .column-labels {
