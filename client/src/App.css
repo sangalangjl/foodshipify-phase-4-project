@@ -13,11 +13,17 @@
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  border: 2px solid black;
+  border: 2px solid #9BB475;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
 }
 
 .cardImg {
   width: 150px;
+  height: auto;
 }
 
 .NavBarContainer {
@@ -291,4 +297,14 @@ a:hover{
 .FormSignin label, .LogInForm label {
   float: left;
   width: 210px;
+}
+
+.CardAddBtn {
+  background: #9BB475;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
 }

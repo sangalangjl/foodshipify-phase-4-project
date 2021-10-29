@@ -5,11 +5,11 @@ function ProductCard({product, handleCartData}) {
         <div className="product-card"> 
             <img className="cardImg" src={img_url} alt="img_url"/>
             <h3>{name}</h3>
-            <h3>Price: {price}</h3>
+            <h3>Price: ${(price).toFixed(2)}</h3>
             <h3>{product_type}</h3>
             <div className="buttonContainer">
                 <div>
-                    <button onClick={() => handleCartData(product)}>Add To Cart</button>
+                    <button className="CardAddBtn" onClick={() => handleCartData(product)}>Add To Cart</button>
                 </div>
             </div>
         </div>
